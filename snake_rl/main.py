@@ -7,7 +7,6 @@ from mean_stream import MeanStream
 from ai_snake_game import AISnakeGame
 from ai_agent import Agent, AgentTrainer
 from controls import Controls, ControlsWindow, Info
-from snake_game import GraphicalSnakeGame
 import graph_score as graph_score
 
 
@@ -58,23 +57,6 @@ def play_ai():
         ctrl_window.update()
         trainer.agent.set_learning_rate(controls.learning_rate)
         
-        game.render()
-
-
-def play_human():
-    game = GraphicalSnakeGame((10, 10))
-
-    running = True
-    clock = pygame.time.Clock()
-    while running:
-        clock.tick(60)
-
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                running = False
-            else:
-                game.handle_event(event)
-
         game.render()
 
 
