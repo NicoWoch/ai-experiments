@@ -19,4 +19,4 @@ The population graph shows similarities to [Lotka-Volterra](https://en.wikipedia
 
 - `item.py` - has just one enum *Item* specifying three different type of cells in *Board* grid
 
-- `main.py` - entry point of the program. Contains **configuration** for rules of silumation.
+- `main.py` - entry point of the program. Contains **configuration** for rules of simulation.
